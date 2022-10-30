@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hosting</title>
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- link css -->
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container container-header">
+        <div class="logo-container">
+          <a href="./index.html"
+            ><img src="./assets/img/logo-primary.png" alt="logo-image"
+          /></a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">فروشگاه</a></li>
+            <li><a href="#">اخبار</a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <a href="#" class="cart-button"
+            ><i class="fa fa-shopping-cart"></i
+          ></a>
+          <a href="#" class="register-button">ثبت نام</a>
+          <a href="#" class="login-button">ورود</a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <!-- banner-home start -->
+      <section class="banner-home-section">
+        <div class="container banner-home">
+          <div class="banner-content">
+            <h1>لورم ساز لورم ساز جدید</h1>
+            <p class="banner-content-desc">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+              کتابهای زیادی در شصت و سه درصد گذشته
+            </p>
+            <form action="" class="form">
+                <input type="text" placeholder="نام دامنه ..."/>
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="domain-list">
+                <div class="domain-list-item">
+                    <p>com.</p>
+                    <span class="domain-price">320,000 <span>تومان</span></span>
+                </div>
+                <div class="domain-list-item">
+                    <p>ir.</p>
+                    <span class="domain-price">16,000 <span>تومان</span></span>
+                </div>
+                <div class="domain-list-item">
+                    <p>net.</p>
+                    <span class="domain-price">233,000 <span>تومان</span></span>
+                </div>
+                <div class="domain-list-item">
+                    <p>org.</p>
+                    <span class="domain-price">199,000 <span>تومان</span></span>
+                </div>
+            </div>
+          </div>
+          <div class="banner-image">
+            <img src="./assets/img/servers.svg" alt="server-image" />
+          </div>
+        </div>
+      </section>
+      <!-- banner-home end -->
+    </main>
+    <!-- main end -->
+  </body>
 </html>
