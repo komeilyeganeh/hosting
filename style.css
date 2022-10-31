@@ -9,6 +9,7 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --color-black-2: #555;
   --color-primary: #1d1ce5;
   --color-gray: #aaa;
   --color-gray-light: #ddd;
@@ -185,4 +186,44 @@ input {
     color: var(--color-white);
     font-size: .86rem;
     text-align: center;
+}
+
+/* promo styles */
+.promo-section {
+  width: 100%;
+  margin-top: 4rem;
+}
+.promo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 35px;
+  justify-content: center;
+}
+.promo-item {
+  padding: 1rem;
+  border-radius: 25px;
+  border: 1px solid var(--color-gray-light);
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 23px;
+  justify-items: center;
+  transition: .3s ease-out;
+}
+.promo-container a:hover .promo-item {
+  box-shadow: 0 0 20px 8px var(--color-gray-light);
+  border-color: transparent;
+  transform: scale(1.05);
+}
+.promo-item .fa {
+  font-size: 2rem;
+  color: var(--color-primary);
+  transition: .3s ease-out;
+}
+.promo-container a:hover .promo-item .fa {
+  color: var(--color-orange);
+}
+.promo-desc {
+  color: var(--color-black-2);
+  font-size: .9rem;
+  text-align: center;
 }
