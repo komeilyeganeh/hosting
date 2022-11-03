@@ -20,25 +20,35 @@
     <!-- header start -->
     <header class="header">
       <div class="container container-header">
+        <!-- menu toggle button -->
+        <div class="menu-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+         <!-- menu toggle button -->
+
         <div class="logo-container">
           <a href="./index.html"
             ><img src="./assets/img/logo-primary.png" alt="logo-image"
           /></a>
         </div>
-        <nav class="navbar">
-          <ul>
-            <li><a href="#">خانه</a></li>
-            <li><a href="#">فروشگاه</a></li>
-            <li><a href="#">اخبار</a></li>
-            <li><a href="#">تماس با ما</a></li>
-          </ul>
-        </nav>
-        <div class="header-buttons">
-          <a href="#" class="cart-button"
-            ><i class="fa fa-shopping-cart"></i
-          ></a>
-          <a href="#" class="btn-primary">ثبت نام</a>
-          <a href="#" class="btn-primary-light">ورود</a>
+        <div class="navbar-buttons">
+          <nav class="navbar">
+            <ul>
+              <li><a href="#">خانه</a></li>
+              <li><a href="#">فروشگاه</a></li>
+              <li><a href="#">اخبار</a></li>
+              <li><a href="#">تماس با ما</a></li>
+            </ul>
+          </nav>
+          <div class="header-buttons">
+            <a href="#" class="cart-button"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="btn-primary">ثبت نام</a>
+            <a href="#" class="btn-primary-light">ورود</a>
+          </div>
         </div>
       </div>
     </header>
@@ -181,9 +191,7 @@
       <section class="our-services-section">
         <div class="container">
           <div class="services-title-container">
-            <h2 class="section-title">
-              ما یک راه حل میزبانی برای شما داریم
-            </h2>
+            <h2 class="section-title">ما یک راه حل میزبانی برای شما داریم</h2>
             <p class="section-subtitle">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
@@ -196,55 +204,97 @@
               <div class="our-service-desc">
                 <i class="fa fa-hard-drive"></i>
                 <h3>میزبانی اشتراکی</h3>
-                <p>محبوب ترین محصول ما! میزبانی وب اشتراکی به شما یک نام دامنه رایگان، میزبانی ذخیره سازی سریع SSD می دهد.</p>
-                <p class="our-service-price">شروع قیمت از : <span>125,000 تومان</span></p>
+                <p>
+                  محبوب ترین محصول ما! میزبانی وب اشتراکی به شما یک نام دامنه
+                  رایگان، میزبانی ذخیره سازی سریع SSD می دهد.
+                </p>
+                <p class="our-service-price">
+                  شروع قیمت از : <span>125,000 تومان</span>
+                </p>
               </div>
-              <a href="#" class="btn-primary-light service-detail-btn">نمایش جزئیات</a>
+              <a href="#" class="btn-primary-light service-detail-btn"
+                >نمایش جزئیات</a
+              >
             </div>
             <div class="our-service-item">
               <div class="our-service-desc">
                 <i class="fa fa-hard-drive"></i>
                 <h3>هاست وردپرس</h3>
-                <p>با وردپرس سریع راه اندازی و اجرا کنید. بهینه شده برای عملکرد برای تعمیر و نگهداری آسان.</p>
-                <p class="our-service-price">شروع قیمت از : <span>95,000 تومان</span></p>
+                <p>
+                  با وردپرس سریع راه اندازی و اجرا کنید. بهینه شده برای عملکرد
+                  برای تعمیر و نگهداری آسان.
+                </p>
+                <p class="our-service-price">
+                  شروع قیمت از : <span>95,000 تومان</span>
+                </p>
               </div>
-              <a href="#" class="btn-primary-light service-detail-btn">نمایش جزئیات</a>
+              <a href="#" class="btn-primary-light service-detail-btn"
+                >نمایش جزئیات</a
+              >
             </div>
             <div class="our-service-item">
               <div class="our-service-desc">
                 <i class="fa fa-hard-drive"></i>
                 <h3>هاست VPS</h3>
-                <p>سرورهای خصوصی مجازی با SSDهای فوق سریع و انعطاف پذیری با HTTP/2، Ubuntu، IPv6، Nginx و موارد دیگر.</p>
-                <p class="our-service-price">شروع قیمت از : <span>350,000 تومان</span></p>
+                <p>
+                  سرورهای خصوصی مجازی با SSDهای فوق سریع و انعطاف پذیری با
+                  HTTP/2، Ubuntu، IPv6، Nginx و موارد دیگر.
+                </p>
+                <p class="our-service-price">
+                  شروع قیمت از : <span>350,000 تومان</span>
+                </p>
               </div>
-              <a href="#" class="btn-primary-light service-detail-btn">نمایش جزئیات</a>
+              <a href="#" class="btn-primary-light service-detail-btn"
+                >نمایش جزئیات</a
+              >
             </div>
             <div class="our-service-item">
               <div class="our-service-desc">
                 <i class="fa fa-hard-drive"></i>
                 <h3>سایت ساز WP</h3>
-                <p>بدون نیاز به کد! با استفاده از ابزارهای طراحی که ساخت وب سایت وردپرس را ساده می کند، سایت خود را با اطمینان بسازید.</p>
-                <p class="our-service-price">شروع قیمت از : <span>300,000 تومان</span></p>
+                <p>
+                  بدون نیاز به کد! با استفاده از ابزارهای طراحی که ساخت وب سایت
+                  وردپرس را ساده می کند، سایت خود را با اطمینان بسازید.
+                </p>
+                <p class="our-service-price">
+                  شروع قیمت از : <span>300,000 تومان</span>
+                </p>
               </div>
-              <a href="#" class="btn-primary-light service-detail-btn">نمایش جزئیات</a>
+              <a href="#" class="btn-primary-light service-detail-btn"
+                >نمایش جزئیات</a
+              >
             </div>
             <div class="our-service-item">
               <div class="our-service-desc">
                 <i class="fa fa-hard-drive"></i>
                 <h3>هاست اختصاصی</h3>
-                <p>وب سرورهای سریع برای اجرای برنامه های شما با دسترسی روت و 100٪ Uptime تضمین میزبانی ما.</p>
-                <p class="our-service-price">شروع قیمت از : <span>520,000 تومان</span></p>
+                <p>
+                  وب سرورهای سریع برای اجرای برنامه های شما با دسترسی روت و 100٪
+                  Uptime تضمین میزبانی ما.
+                </p>
+                <p class="our-service-price">
+                  شروع قیمت از : <span>520,000 تومان</span>
+                </p>
               </div>
-              <a href="#" class="btn-primary-light service-detail-btn">نمایش جزئیات</a>
+              <a href="#" class="btn-primary-light service-detail-btn"
+                >نمایش جزئیات</a
+              >
             </div>
             <div class="our-service-item">
               <div class="our-service-desc">
                 <i class="fa fa-hard-drive"></i>
                 <h3>هاست ابری</h3>
-                <p>سرورهای رعد و برق سریع با دسترسی روت، فضای ذخیره سازی SSD و شبکه‌ای بسیار سریع که توسط API باز پشتیبانی می‌شوند.</p>
-                <p class="our-service-price">شروع قیمت از : <span>480,000 تومان</span></p>
+                <p>
+                  سرورهای رعد و برق سریع با دسترسی روت، فضای ذخیره سازی SSD و
+                  شبکه‌ای بسیار سریع که توسط API باز پشتیبانی می‌شوند.
+                </p>
+                <p class="our-service-price">
+                  شروع قیمت از : <span>480,000 تومان</span>
+                </p>
               </div>
-              <a href="#" class="btn-primary-light service-detail-btn">نمایش جزئیات</a>
+              <a href="#" class="btn-primary-light service-detail-btn"
+                >نمایش جزئیات</a
+              >
             </div>
           </div>
         </div>
@@ -256,9 +306,14 @@
         <div class="overlay-action">
           <div class="container call-to-action-container">
             <h2>به کمک نیاز دارید؟</h2>
-            <p>خواه گیر کرده اید یا فقط می خواهید نکاتی در مورد اینکه از کجا شروع کنید، با کارشناسان ما تماس بگیرید.</p>
+            <p>
+              خواه گیر کرده اید یا فقط می خواهید نکاتی در مورد اینکه از کجا شروع
+              کنید، با کارشناسان ما تماس بگیرید.
+            </p>
             <div class="call-to-action-btns">
-              <a href="#" class="btn-primary-light call-to-action-btn">با ما چت کنید</a>
+              <a href="#" class="btn-primary-light call-to-action-btn"
+                >با ما چت کنید</a
+              >
             </div>
           </div>
         </div>
@@ -270,12 +325,18 @@
         <div class="container">
           <div class="pricing-title-container">
             <h2 class="section-title">قیمت انواع میزبانی</h2>
-            <p class="section-subtitle">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
+            <p class="section-subtitle">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+            </p>
           </div>
           <div class="pricing-pack-items">
             <div class="pricing-pack-item">
               <h4 class="pricing-pack-title">لورم ایپسوم</h4>
-              <p class="pricing-pack-price">35000 تومان / <span>ماهیانه</span></p>
+              <p class="pricing-pack-price">
+                35000 تومان / <span>ماهیانه</span>
+              </p>
               <div class="pricing-pack-feature">
                 <ul>
                   <li><span>1</span> وب سایت</li>
@@ -290,7 +351,9 @@
             </div>
             <div class="pricing-pack-item popular-pack">
               <h4 class="pricing-pack-title">لورم ایپسوم</h4>
-              <p class="pricing-pack-price">35000 تومان / <span>ماهیانه</span></p>
+              <p class="pricing-pack-price">
+                35000 تومان / <span>ماهیانه</span>
+              </p>
               <div class="pricing-pack-feature">
                 <ul>
                   <li><span>1</span> وب سایت</li>
@@ -305,7 +368,9 @@
             </div>
             <div class="pricing-pack-item">
               <h4 class="pricing-pack-title">لورم ایپسوم</h4>
-              <p class="pricing-pack-price">35000 تومان / <span>ماهیانه</span></p>
+              <p class="pricing-pack-price">
+                35000 تومان / <span>ماهیانه</span>
+              </p>
               <div class="pricing-pack-feature">
                 <ul>
                   <li><span>1</span> وب سایت</li>
