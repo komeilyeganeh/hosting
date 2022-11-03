@@ -36,6 +36,7 @@ a {
 }
 input {
   font-family: "shabnam";
+  outline: none;
 }
 
 .container {
@@ -493,6 +494,107 @@ section:not(.banner-home-section, .call-to-action) {
   font-size: .9rem;
 }
 
+/* ------ login page styles ------ */
+.login-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-primary);
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+}
+.form-container {
+  width: 40%;
+  max-width: 90%;
+  background-color: var(--color-white);
+  border-radius: 25px;
+  box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  display: grid;
+  justify-items: center;
+}
+.login-form-logo {
+  width: 100%;
+  text-align: center;
+}
+.login-form-logo a {
+  display: block;
+}
+.login-form {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 25px;
+  margin-top: 2rem;
+}
+.form-group {
+  width: 100%;
+  position: relative;
+}
+.form-group span {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  font-size: .9rem;
+  color: var(--color-black-2);
+  pointer-events: none;
+  transition: .3s ease-in;
+  padding: 2px 5px;
+  background-color: var(--color-white);
+}
+.form-group input {
+  width: 100%;
+  padding: 8px 9px;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid var(--color-gray-light);
+  font-size: 1.05rem;
+}
+.form-group input:focus + span,
+.form-group input:not(:placeholder-shown) + span {
+  top: -10%;
+}
+.forget-password {
+  color: var(--color-primary);
+  font-size: .9rem;
+  text-align: left;
+  padding: 5px 0;
+}
+.links-login-form {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+}
+.remember-me {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 5px;
+  align-items: center;
+}
+.remember-me span {
+  font-size: .9rem;
+  color: var(--color-black-2);
+}
+.submit-login {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1rem;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.link-register {
+  font-size: .95rem;
+  margin-top: 2rem;
+}
+.link-register a {
+  color: var(--color-primary);
+}
+
 /* ===== Responsive ===== */
 @media screen and (max-width: 991px) {
   .menu-bars {
@@ -529,6 +631,9 @@ section:not(.banner-home-section, .call-to-action) {
   }
   .cart-button {
     text-align: right;
+  }
+  .form-container {
+    width: 60%;
   }
 }
 
@@ -586,10 +691,36 @@ section:not(.banner-home-section, .call-to-action) {
   .domain-list {
     display: none;
   }
+  .form-container {
+    width: 95%;
+  }
+  .login-form {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .pricing-pack-items {
     grid-template-columns: 1fr;
+  }
+  .remember-me span {
+    font-size: .8rem;
+  }
+  .forget-password {
+    font-size: .8rem;
+  } 
+  .link-register {
+    font-size: .85rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .links-login-form {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-content: start;
+  }
+  .forget-password {
+    text-align: right;
   }
 }
