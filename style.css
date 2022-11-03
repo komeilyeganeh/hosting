@@ -49,7 +49,7 @@ input {
 section {
   width: 100%;
 }
-section:not(.banner-home-section, .call-to-action) {
+section:not(.banner-home-section, .call-to-action, .register-section, .login-section) {
   padding-top: 5rem;
 }
 .section-subtitle {
@@ -494,8 +494,9 @@ section:not(.banner-home-section, .call-to-action) {
   font-size: .9rem;
 }
 
-/* ------ login page styles ------ */
-.login-section {
+/* ------ login & register pages styles ------ */
+.login-section,
+.register-section {
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-primary);
@@ -514,14 +515,17 @@ section:not(.banner-home-section, .call-to-action) {
   display: grid;
   justify-items: center;
 }
-.login-form-logo {
+.login-form-logo,
+.register-form-logo {
   width: 100%;
   text-align: center;
 }
-.login-form-logo a {
+.login-form-logo a,
+.register-form-logo a {
   display: block;
 }
-.login-form {
+.login-form,
+.register-form {
   width: 80%;
   margin: 0 auto;
   display: grid;
@@ -563,22 +567,26 @@ section:not(.banner-home-section, .call-to-action) {
   text-align: left;
   padding: 5px 0;
 }
+.links-register-form,
 .links-login-form {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
 }
-.remember-me {
+.remember-me,
+.terms-service-container {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   column-gap: 5px;
   align-items: center;
 }
-.remember-me span {
+.remember-me span,
+.terms-service-container span {
   font-size: .9rem;
   color: var(--color-black-2);
 }
-.submit-login {
+.submit-login,
+.submit-register {
   border: none;
   border-radius: 8px;
   background-color: var(--color-primary);
@@ -587,11 +595,16 @@ section:not(.banner-home-section, .call-to-action) {
   padding: 8px 0;
   cursor: pointer;
 }
-.link-register {
+.link-register,
+.link-login {
   font-size: .95rem;
   margin-top: 2rem;
 }
-.link-register a {
+.link-register a,
+.link-login a {
+  color: var(--color-primary);
+}
+.terms-service {
   color: var(--color-primary);
 }
 
@@ -694,7 +707,8 @@ section:not(.banner-home-section, .call-to-action) {
   .form-container {
     width: 95%;
   }
-  .login-form {
+  .login-form,
+  .register-form {
     width: 100%;
   }
 }
@@ -703,19 +717,22 @@ section:not(.banner-home-section, .call-to-action) {
   .pricing-pack-items {
     grid-template-columns: 1fr;
   }
-  .remember-me span {
+  .remember-me span,
+  .terms-service-container span {
     font-size: .8rem;
   }
   .forget-password {
     font-size: .8rem;
   } 
-  .link-register {
+  .link-register,
+  .link-login {
     font-size: .85rem;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .links-login-form {
+  .links-login-form,
+  .links-register-form {
     grid-template-columns: 1fr;
     row-gap: 10px;
     justify-content: start;
